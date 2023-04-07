@@ -10,7 +10,9 @@ function Works(props) {
       <div className="container">
         <div className="works__inner">
             <h2 className="works-title"></h2>
+            <div className="works-extra">
             <p className="works-subtitle">Featured works</p>
+            </div>
 
             <ul className="works-cards">
                 <li className="works-card">

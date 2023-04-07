@@ -1,0 +1,29 @@
+.footer {
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+    align-items: center;
+    padding: 54px 0;
+  }
+
+  &-socials {
+    display: flex;
+    list-style-type: none;
+    column-gap: 35px;
+  }
+
+  &-social {
+    &__link {
+      color: #21243d;
+    }
+  }
+
+  &-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #21243d;
+  }
+}

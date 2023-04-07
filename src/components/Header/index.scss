@@ -1,6 +1,12 @@
 .header {
   margin-bottom: 33px;
 
+  &-container {
+    min-width: 340px;
+    margin: 0 auto;
+    padding:  0 10px;
+  }
+
   .nav {
     display: flex;
     align-items: center;
@@ -17,6 +23,10 @@
   .header {
     margin-bottom: 38px;
 
+    &-container {
+      padding:  0 20px;
+    }
+
     .nav {
       padding: 28px 14px;
     }
@@ -26,6 +36,10 @@
 @media only screen and (min-width: 768px) {
   .header {
     margin-bottom: 44px;
+
+    &-container {
+      padding:  0 32px;
+    }
 
     .nav {
       padding: 32px 14px;
@@ -57,26 +71,34 @@
 }
 
 @media only screen and (min-width: 992px) {
-    .header {
-      margin-bottom: 62px;
-  
-      .nav {
-        padding: 27px 12px;
-  
-        &-list {
-          column-gap: 33px;
+  .header {
+    margin-bottom: 62px;
+
+    &-container {
+      padding:  0 48px;
+    }
+
+    .nav {
+      padding: 27px 12px;
+
+      &-list {
+        column-gap: 33px;
       }
     }
   }
 }
 
-
 @media only screen and (min-width: 1200px) {
-    .header {
-      margin-bottom: 120px;
-  
-      .nav {
-        padding: 27px 0px;
+  .header {
+    margin-bottom: 120px;
+
+    &-container {
+      max-width: 1300px;
+      padding: 0 60px;
+    }
+
+    .nav {
+      padding: 27px 0px;
     }
   }
 }

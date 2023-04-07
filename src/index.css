@@ -58,7 +58,8 @@ body{
 
 @media only screen and (min-width: 1200px){
   .container{
+    width: 900px;
     margin: 0 auto;
-    padding: 0 62px;
+    padding: 12px;
   }
 }

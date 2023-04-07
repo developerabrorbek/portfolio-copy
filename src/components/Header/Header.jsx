@@ -5,7 +5,7 @@ import burgerImage from "../../assets/menu.svg";
 function Header(props) {
   return (
     <header className="header">
-      <div className="container">
+      <div className="header-container">
         <nav className="nav">
           <ul className="nav-list">
             <li className="nav-list__item">

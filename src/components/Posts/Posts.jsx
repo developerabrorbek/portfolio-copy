@@ -7,9 +7,12 @@ function Posts(props) {
             <div className="container">
                 <div className="posts__inner">
                     <h2 className="posts-title"></h2>
+                    <div className="posts-extras">
                     <p className="posts-subtitle">
                     Recent posts
                     </p>
+                    <a href="#" className='view-all'>View all</a>
+                    </div>
                     <div className="posts-cards">
                         <div className="posts-card">
                             <h3 className='posts-card__title'>Making a design system from scratch</h3>

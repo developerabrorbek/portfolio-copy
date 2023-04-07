@@ -1,7 +1,6 @@
 .posts {
   background: #edf7fa;
 
-
   &__inner {
     display: flex;
     flex-direction: column;
@@ -9,12 +8,22 @@
     padding-bottom: 38px;
   }
 
+  &-extras {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+  }
+
+  .view-all {
+    display: none;
+    text-decoration: none;
+  }
+
   &-subtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 60px;
-    display: flex;
-    align-items: flex-end;
     color: #21243d;
   }
 
@@ -65,6 +74,91 @@
       font-size: 16px;
       line-height: 24px;
       color: #21243d;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 576px) {
+  .posts {
+  
+    &__inner {
+      padding: 38px 0;
+    }
+  
+    &-extras {
+      margin-bottom: 14px;
+    }
+  
+    &-cards {
+      row-gap: 28px;
+    }
+  
+    &-card {
+      max-width: 436px;
+      padding: 19px 25px 28px;
+    }
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .posts {
+  
+    &__inner {
+      padding: 42px 0;
+    }
+  
+    &-extras {
+      justify-content: space-between;
+      width: 80%;
+      margin-bottom: 24px;
+    }
+  
+    .view-all {
+      display: block;
+    }
+
+  
+    &-cards {
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+    }
+  
+    &-card {
+      max-width: 436px;
+      padding: 19px 25px 28px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .posts {
+  
+    &__inner {
+      padding: 42px 0;
+    }
+  
+    &-extras {
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    &-cards {
+      width: 100%;
+      column-gap: 20px;
+    }
+  
+    &-card {
+      padding: 24px 25px 22px;
+  
+      &__title {
+        font-size: 26px;
+        line-height: 38px;
+        margin-bottom: 20px;
+      }
     }
   }
 }

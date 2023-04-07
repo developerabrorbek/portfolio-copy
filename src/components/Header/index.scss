@@ -13,8 +13,22 @@
     padding: 20px 8px;
     justify-content: flex-end;
 
+
+
     &-list {
       display: none;
+
+      &__item{
+        color:  #000000;
+
+        &:hover{
+          opacity: 0.8;
+        }
+
+        &-link{
+          color: inherit;
+        }
+      }
     }
   }
 }

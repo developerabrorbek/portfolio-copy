@@ -16,6 +16,9 @@
   &-social {
     &__link {
       color: #21243d;
+      &:hover{
+        opacity: 0.8;
+      }
     }
   }
 

@@ -1,127 +1,124 @@
-.posts {
-  background: #edf7fa;
-}
-.posts__inner {
+.hero__inner {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 38px;
+  padding-bottom: 58px;
+  padding: 13px;
 }
-.posts-extras {
-  display: flex;
-  justify-content: center;
-  width: 75%;
-  align-items: center;
+.hero-image {
+  margin-bottom: 42px;
+  width: 171px;
+  height: 171px;
 }
-.posts .view-all {
-  display: none;
-  text-decoration: none;
-}
-.posts-subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 60px;
-  color: #21243d;
-}
-.posts-cards {
+.hero-body {
   display: flex;
   flex-direction: column;
-  row-gap: 17px;
+  align-items: center;
+  row-gap: 25px;
 }
-.posts-card {
-  max-width: 418px;
-  background-color: #fff;
-  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
-  border-radius: 4px;
-  padding: 12px 19px 22px;
-}
-.posts-card__title {
+.hero-body__title {
   font-weight: 700;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
   color: #21243d;
-  margin-bottom: 13px;
 }
-.posts-card__extra {
-  margin-bottom: 20px;
-  display: flex;
-  column-gap: 24px;
-}
-.posts-card__extra-first, .posts-card__extra-second {
-  display: inline-block;
-  width: 145px;
-  border-right: 1px solid #000000;
+.hero-body__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  text-align: center;
   color: #21243d;
 }
-.posts-card__extra-second {
-  border-right: none;
+.hero-body__button {
+  background: #ff6464;
+  border-radius: 2px;
+  border: none;
+  padding: 9px 20px 14px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
 }
-.posts-card__subtitle {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #21243d;
+.hero-body__button:hover {
+  background-color: rgba(255, 100, 100, 0.8784313725);
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 576px) {
-  .posts__inner {
-    padding: 38px 0;
+  .hero__inner {
+    padding-bottom: 68px;
   }
-  .posts-extras {
-    margin-bottom: 14px;
+  .hero-image {
+    margin-bottom: 52px;
+    width: 211px;
+    height: 211px;
   }
-  .posts-cards {
-    row-gap: 28px;
+  .hero-body {
+    row-gap: 30px;
   }
-  .posts-card {
-    max-width: 436px;
-    padding: 19px 25px 28px;
+  .hero-body__subtitle {
+    max-width: 590px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hero__inner {
+    padding-bottom: 68px;
+  }
+  .hero-image {
+    margin-bottom: 52px;
+    width: 211px;
+    height: 211px;
+  }
+  .hero-body {
+    row-gap: 30px;
+  }
+  .hero-body__subtitle {
+    max-width: 590px;
   }
 }
 @media only screen and (min-width: 992px) {
-  .posts__inner {
-    padding: 42px 0;
-  }
-  .posts-extras {
-    justify-content: space-between;
-    width: 80%;
-    margin-bottom: 24px;
-  }
-  .posts .view-all {
-    display: block;
-  }
-  .posts-cards {
+  .hero__inner {
     flex-direction: row;
-    width: 100%;
-    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-bottom: 68px;
+    justify-content: center;
+    column-gap: 82px;
   }
-  .posts-card {
-    max-width: 436px;
-    padding: 19px 25px 28px;
+  .hero-image {
+    margin-bottom: 0;
+    width: 221px;
+    height: 221px;
+  }
+  .hero-body {
+    order: -3;
+    width: 467px;
+    align-items: flex-start;
+    row-gap: 38px;
+  }
+  .hero-body__title {
+    text-align: start;
+  }
+  .hero-body__subtitle {
+    max-width: 590px;
+    text-align: start;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .posts__inner {
-    padding: 42px 0;
+  .hero__inner {
+    padding: 0;
+    padding-bottom: 71px;
+    column-gap: 190px;
   }
-  .posts-extras {
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 24px;
+  .hero-image {
+    width: 243px;
+    height: 243px;
   }
-  .posts-cards {
-    width: 100%;
-    column-gap: 20px;
+  .hero-body {
+    width: 497px;
   }
-  .posts-card {
-    padding: 24px 25px 22px;
-  }
-  .posts-card__title {
-    font-size: 26px;
-    line-height: 38px;
-    margin-bottom: 20px;
+  .hero-body__title {
+    font-size: 44px;
+    line-height: 60px;
   }
 }/*# sourceMappingURL=index.css.map */

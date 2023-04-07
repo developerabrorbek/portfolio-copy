@@ -44,6 +44,11 @@
       font-size: 20px;
       line-height: 29px;
       color: #ffffff;
+
+      &:hover{
+        background-color: #ff6464e0;
+        cursor: pointer;
+      }
     }
   }
 }
